@@ -32,3 +32,30 @@ for i in s.split():
         dict[k]=[i]
 print(dict)
 print(len(max(dict.values())))
+
+.Write a Python function to find the Max of three numbers.
+def max(x,y,z):
+    if x>y and x>z:
+        return x
+    elif y>x and y>z:
+        return y
+    else: 
+        return z
+print(max(-1,6,4))
+
+Write a Python function to sum all the numbers in a list.
+l=[1,2,3,4,5,6,7]
+from functools import reduce
+fun=lambda x,y:x+y
+reduce(fun,l)
+
+#4.Write a Python program to reverse a string.###While loop
+s='pooja'
+c=len(s)-1
+rev_s=''
+while c>=0:
+    rev_s=rev_s+(s[c])
+    c-=1 
+print(rev_s)
+
+
