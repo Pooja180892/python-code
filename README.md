@@ -96,4 +96,22 @@ while c>=0:
     c-=1 
 print(rev_s)
 
+Write a Python function to calculate the factorial of a number (a non-negative integer).The function accepts the number as an argument.
+num=int(input('enter the no.:'))
+def fact(num):
+    factorial=1
+    if num<0:
+        print('It is negative no.')
+    else:
+        while num>0:
+            factorial=factorial*num
+            num-=1
+        print(factorial)
+fact(num)
 
+Write a Python function to check whether a number falls in a given range.
+def falls(num):
+    if num in range(1,11):
+        print('number falls in a given range.')
+    else:print ("number not falls in a given range.")
+falls(0)
