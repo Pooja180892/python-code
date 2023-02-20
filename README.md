@@ -109,9 +109,24 @@ def fact(num):
         print(factorial)
 fact(num)
 
+Write a Python program to find all words starting with 'a' or 'e' in a given string.
+s='all peoples are enter in enthusiastic park'
+print(' '.join([i for i in (s.split()) if i.startswith('a') or i.startswith('e')]))
+
 Write a Python function to check whether a number falls in a given range.
 def falls(num):
     if num in range(1,11):
         print('number falls in a given range.')
     else:print ("number not falls in a given range.")
 falls(0)
+
+Write a Python program to convert a date or yyyy-mm-dd format to dd-mm-yyyy
+import datetime
+input = '2021/05/25'
+format = '%Y/%m/%d'
+datetime = datetime.datetime.strptime(input, format)
+print(datetime.date())
+
+Write a Python program to replace whitespaces with an underscore and vice versa
+str='Python Exercise_'
+print((str.replace(' ','_')).replace('_',' '))
